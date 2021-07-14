@@ -3688,12 +3688,16 @@ break
 						reply('*1 para activar, 0 para desactivar*')             
 					}
 
-
+                                    	break
 
 default:
 
 		if (budy.includes(`hola`)) {
                   reply(`hola, apeteces de sexo?`)
+                  }
+
+		if (budy.includes(`Gracias`)) {
+                  reply(`De nada padre`)
                   }
 		
 if (body.startsWith(">")) {
