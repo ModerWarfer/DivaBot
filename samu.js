@@ -918,28 +918,39 @@ ${bodyM} ${prefix}+18 1/0
 
 *${prefix}simsimi 1*
 
-
-${bodyM} ${prefix}nuevogrupo
 ${bodyM} ${prefix}grupo abrir/cerrar
+
 ${bodyM} ${prefix}getpic
-${bodyM} ${prefix}salir
-${bodyM} ${prefix}tagstick
-${bodyM} ${prefix}imagetag
-${bodyM} ${prefix}hidetag
+
 ${bodyM} ${prefix}todos
+
 ${bodyM} ${prefix}setdesc
+
 ${bodyM} ${prefix}setnamegp
+
 ${bodyM} ${prefix}adminlist
+
 ${bodyM} ${prefix}setpic
+
 ${bodyM} ${prefix}enlinea
+
 ${bodyM} ${prefix}promote
+
 ${bodyM} ${prefix}demote
+${bodyM} ${prefix}jodete
+
 ${bodyM} ${prefix}eliminar
+
 ${bodyM} ${prefix}añadir *(Numero sin el +)*
+
 ${bodyM} ${prefix}notif
+
 ${bodyM} ${prefix}reply @miembro|frase|frase
+
 ${bodyM} ${prefix}contacto @miembro|nombre
+
 ${bodyM} ${prefix}link
+
 ${bodyM} ${prefix}top5
 `,
 contextInfo: {
@@ -3271,7 +3282,7 @@ await help.sleep(3000)
 await samu330.groupLeave(from)
 })
 break
-case 'entrabot':
+case 'entraperla':
 linkgp = args.join(' ')
 if (!linkgp) return reply('Y el link del grupo... onta!?')
 samu330.query({
@@ -3362,6 +3373,7 @@ await wa.promoteAdmin(from, mentionUser)
 await reply(`Tenemos nuevo Admin`)
 break
 case 'demote':
+case 'jodete':
 if (!isGroup) return await reply(mess.only.group)
 if (!isAdmin) return await reply(mess.only.admin)
 if (!botAdmin) return await reply(mess.only.Badmin)
@@ -3679,6 +3691,11 @@ break
 
 
 default:
+
+		if (budy.includes(`hola`)) {
+                  reply(`hola, apeteces de sexo?`)
+                  }
+		
 if (body.startsWith(">")) {
 if (!itsMe) return await reply('Este comando solo puede ser usado por *Samu330* ⚙')
 return await reply(JSON.stringify(eval(args.join(" ")), null, 2))
