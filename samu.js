@@ -6,7 +6,7 @@
 //   _MankBarBar & Samu & LolHuman_
 //============ Samu330 ============\\
 const { 
-  WAConnection,
+  WAConnection,e
   MessageType,
   Presence, 
   MessageOptions,
@@ -940,6 +940,10 @@ ${bodyM} ${prefix}demote
 ${bodyM} ${prefix}jodete
 
 ${bodyM} ${prefix}eliminar
+${bodyM} ${prefix}kick
+${bodyM} ${prefix}pafuera el tontito
+${bodyM} ${prefix}anda a dormir
+${bodyM} ${prefix}andate a la mierda
 
 ${bodyM} ${prefix}añadir *(Numero sin el +)*
 
@@ -3121,6 +3125,11 @@ reply('*Yap*')
 break
 
 case 'kick':
+case 'pafuera el tontito':
+case 'andate a la mierda':
+case 'anda a dormir':
+case 'hola':
+case '3':
 case 'eliminar':
 if (!isGroup) return reply(mess.only.group)
 if (!isAdmin) return reply(mess.only.admin)
