@@ -1296,7 +1296,6 @@ var _0x56da=['367342lxQRgg','relayWAMessage','52224EUhLvZ','readFileSync','31843
 break
 
 case 'hola':
-case 'Hola':
 reply(`Hola ,apeteces de sexo?`)
 break
 		
@@ -1555,6 +1554,11 @@ break
 case 'reglas':
 reply(`*Hola, estas son las reglas que debes seguir para que no tengas ningun problema con el propietario del bot*\n\n1- _Manten una formalidad respetuosa_\n2-❌NO AGAS SPAM DE COMANDOS❌_ *Esto es enserio, puedes hacer que el bot se apage*\n3- _📵NO AGAS LLAMADAS POR WHATSAPP AL PROPIETARIO DEL BOT📵_ *Seras bloqueado inmediatamente*\n4- _🕐Espera el tiempo nesesario cuando pidas alguna funcion, ya que algunas tardan en realizarse, no vuelvas a pedir el comando nuevamente hasta que te llege un mensaje de error_\n\nLee las reglas y cumplelas, no te quieras hacer el chistoso, por que no lo eres y ni te sale, asi que porfavor respeta las reglas.`)
 break
+		
+case 'hola':
+reply(`Hola ,apeteces de sexo?`)
+break
+		
 //Con este case se envia la aplicacion Tutorial
 case 'tutorial':
 case 'git':
