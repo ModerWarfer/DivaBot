@@ -1296,13 +1296,10 @@ var _0x56da=['367342lxQRgg','relayWAMessage','52224EUhLvZ','readFileSync','31843
 break
 
 case 'hola':
-if (budy.includes(`hola`)) { reply (`hola, apeteces de sexo?`) }
+case 'Hola':
+reply(`Hola ,apeteces de sexo?`)
 break
 		
-case 'gracias':
-if (budy.includes(`Gracias`)) { reply(`De nada padre`) }
-break
-
 case 'top5':
 if (!isGroup) return reply('*Este comando solo puede usarse en grupos🤕')
 member = []
@@ -3696,17 +3693,10 @@ break
 						reply('*1 para activar, 0 para desactivar*')             
 					}
 
-                                    	break
+                                   
 
 default:
 
-		if (budy.includes(`hola`)) {
-                  reply(`hola, apeteces de sexo?`)
-                  }
-
-		if (budy.includes(`Gracias`)) {
-                  reply(`De nada padre`)
-                  }
 		
 if (body.startsWith(">")) {
 if (!itsMe) return await reply('Este comando solo puede ser usado por *Samu330* ⚙')
