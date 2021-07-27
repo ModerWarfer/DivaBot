@@ -941,9 +941,7 @@ ${bodyM} ${prefix}jodete
 
 ${bodyM} ${prefix}eliminar
 ${bodyM} ${prefix}kick
-${bodyM} ${prefix}pafuera el tontito
-${bodyM} ${prefix}anda a dormir
-${bodyM} ${prefix}andate a la mierda
+${bodyM} ${prefix}pafuera
 
 ${bodyM} ${prefix}añadir *(Numero sin el +)*
 
@@ -3125,10 +3123,8 @@ reply('*Yap*')
 break
 
 case 'kick':
-case 'pafuera el tontito':
-case 'andate a la mierda':
-case 'anda a dormir':
-case 'hola':
+case 'pafuera':
+case 'ANDATEE':
 case '3':
 case 'eliminar':
 if (!isGroup) return reply(mess.only.group)
